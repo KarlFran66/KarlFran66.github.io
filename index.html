@@ -67,6 +67,17 @@
                     </div>
 
                     <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#internship">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <h3>Internship Log</h3>
+                                    <p>APS; Electrical equipment; Data processing; Feature engineering; Machine learning; 2023</p>
+                                </div>
+                            </div><img class="img-fluid" src="assets/img/internship/aps.png" alt="internship"/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#musicPerception">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white">
@@ -136,11 +147,70 @@
                         </div>
                     </div>
 
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#depression">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <h3>Information Visualization & Depression Treatment</h3>
+                                    <p>UI/UX design; User research & analysis; Bioelectrical monitoring; 2021</p>
+                                </div>
+                            </div><img class="img-fluid" src="assets/img/depression/cover.png" alt="depression"/>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
         <!-- Portfolio Modal-->
+        <div class="portfolio-modal modal fade" id="internship" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0" style="word-break: break-word; font-size: 36px;">Internship Log</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-industry"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-md-6">
+                                            <h3>When & Where</h3>
+                                            <p>2023.06 - 2023.07<br>
+                                               CXIST</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Position</h3>
+                                            <p>AI Algorithm Intern</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-md-12">
+                                            <h3>What I've Done</h3>
+                                            <p style="text-align: left;">I would like to briefly document my activities during this internship here. I mainly participated in an AI-assisted scheduling project for cable production. The goal of this project was to conduct technical pre-research for the company's incubating Advanced Planning and Scheduling (APS) system. This involved developing scheduling schemes based on customer requirements, designing intelligent scheduling using machine learning algorithms primarily in Python, and setting up RESTful interfaces to support system integration. All datasets and materials handled during the project are considered confidential company documents. Therefore, I will refrain from providing further details on them. Below is a brief summary of some of my key tasks.</p>
+                                            <p style="text-align: left;"><strong>Schemes Formulation:</strong> From a technical standpoint, collaborated with the product team within the company’s current manufacturing execution system (MES) to identify five manual scheduling operations suitable for intelligent automation. This involved creating user profiles and story maps, researching, and designing algorithmic solutions.</p>
+                                            <p style="text-align: left;"><strong>Data Processing:</strong> Employed Python to clean and perform feature engineering on over 100,000 historical work order datasets. This encompassed handling missing/anomalous values, normalization, encoding, etc. Based on business requirements and later model performance, determined optimal feature engineering approaches. For instance, utilizing Word2Vec encoding for material name features and employing N-gram combined with Jaccard for recommending similar material descriptions.</p>
+                                            <p style="text-align: left;"><strong>Machine Learning Algorithm Implementation:</strong> Utilized LSTM (PyTorch) to predict process durations and employed XGBoost to predict work unit capabilities. Employed feature transformation, grid search, and hyperparameter optimization methods, resulting in approximately a 15% reduction in RMSE.</p>
+                                            <p style="text-align: left;"><strong>Exploratory Data Analysis:</strong> Cleaned historical cable production data, applied techniques such as FFT, PCA, DBSCAN, Pearson correlation analysis to unearth underlying data patterns. Created high-dimensional data visualizations using tools like Matplotlib, Seaborn, ECharts, etc., to offer new insights for intelligent scheduling.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <!-- Portfolio Modal - Text-->
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="portfolio-modal modal fade" id="musicPerception" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
@@ -489,6 +559,66 @@
                                             <img style="max-width: 80%; height: auto;" class="img-fluid rounded mb-5" src="assets/img/soundscapes/product2.PNG" alt="soundscapes"/>
                                             <p style="text-align: left;">The storyboard:</p>
                                             <img style="max-width: 80%; height: auto;" class="img-fluid rounded mb-5" src="assets/img/soundscapes/storyboard.PNG" alt="soundscapes"/>
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <!-- Portfolio Modal - Text-->
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-modal modal fade" id="depression" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0" style="word-break: break-word; font-size: 36px;">Research on Information Visualization of Depression Treatment Service Platform</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-heart"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-md-6">
+                                            <h3>When & Where</h3>
+                                            <p>2021.02 - 2022.03<br>
+                                               Shanghai Jiao Tong University</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Members</h3>
+                                            <p>Difei Song<br>
+                                                Jing Xiao<br>
+                                                Yifan Pu<br>
+                                                Yuxuan Zhang<br>
+                                                Zhenqi Xu</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-md-12">
+                                            <h3>Description</h3>
+                                            <p style="text-align: left;">This study is a PRP program in Shanghai Jiao Tong University. It focused on the development of visualization applications to provide data support for the diagnosis and treatment of depression patients. Phase one of the project received an evaluation as an outstanding project.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-md-12">
+                                            <h3>My Work</h3>
+                                            <p style="text-align: left;">In this study, I was involved in every aspect of the project. I firstly completed data investigation through different methods, covering literature searching, field visit, interview, questionnaire, algorithm design, and experiments, and conducted data analysis from gender, age, education level, and time tables of volunteers, and focused on the negative emotion data involved in the investigation. The following image is one of the photos taken during the field visit.</p>
+                                            <img style="max-width: 70%; height: auto;" class="img-fluid rounded mb-5" src="assets/img/depression/visit.png" alt="depression"/>
+                                            <p style="text-align: left;">Besides, I completed the depression assistant treatment APP prototype design together with my teammates based on collected data, which covers functions like picture display, real time tracking, and timetable reminder. The following image displays some conceptual designs of our app prototype.</p>
+                                            <img style="max-width: 70%; height: auto;" class="img-fluid rounded mb-5" src="assets/img/depression/prototype.png" alt="depression"/>
+                                            <p style="text-align: left;">Furthermore, I generated visualization information and built an auxiliary monitoring system for testing the validity of the APP product based on the feedback results of three emotion recognition modules (AD8232 ECG module, GSR module, and MindWave EEG module). The images below show a conceptual diagram of the auxiliary monitoring system and some visualization results.</p>\
+                                            <img style="max-width: 50%; height: auto;" class="img-fluid rounded mb-5" src="assets/img/depression/sensor.png" alt="depression"/>
+                                            <img style="max-width: 100%; height: auto;" class="img-fluid rounded mb-5" src="assets/img/depression/visualization.png" alt="depression"/>
                                         </div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
