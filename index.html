@@ -67,6 +67,17 @@
                     </div>
 
                     <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#wine">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <h3>Wine-Food Pairings</h3>
+                                    <p>Wine industry; Data collection & cleaning; EDA; Feature engineering; Machine learning; Python; 2023</p>
+                                </div>
+                            </div><img class="img-fluid" src="assets/img/wine/pairing.png" alt="wine"/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#internship">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white">
@@ -163,6 +174,62 @@
         </section>
 
         <!-- Portfolio Modal-->
+        <div class="portfolio-modal modal fade" id="wine" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0" style="word-break: break-word; font-size: 36px;">Finding Wine-Food Pairings with A Big Data Approach for Wine-Searcher</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fa fa-wine-bottle"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-md-6">
+                                            <h3>When & Where</h3>
+                                            <p>2023.09 - 2023.10<br>
+                                                KTH Royal Institute of Technology</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Members</h3>
+                                            <p>Veerle Uhl<br>
+                                                Yuan Chen<br>
+                                                Yuxuan Zhang</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-md-12">
+                                            <h3>Description</h3>
+                                            <p style="text-align: left;">This project aims to use big data and machine learning methods to uncover potential patterns in wine and food pairing based on the existing database of wine and food pairings derived from user search frequencies on the Wine-Searcher website. In the initial stages of the project, extensive research was conducted. It was found that in the eyes of wine culture enthusiasts and wine connoisseurs, the primary considerations when pairing wine with food are six taste features: sweet, acid, salt, piquant, fat, and bitter. However, databases that contain both these taste features and the relationships between wine and food pairings are not commonly available. Therefore, the decision was made to extract these six taste features from wine and food reviews in online marketplaces and then connect them with the wine and food pairing database on the Wine-Searcher website, thus creating a supervised learning dataset. As a result, all the content in our dataset comes from the subjective feedback data of numerous website users with diverse preferences for wine and food. We aim to explore whether machine learning can uncover patterns within this data and provide new insights for traditional wine and food pairing and wine tasting methods. Feel free to explore our <a href="https://github.com/KarlFran66/DM2583/tree/main/Project" style="text-decoration: underline;">GitHub repo</a> to see our code implementation.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-md-12">
+                                            <h3>My Work</h3>
+                                            <p style="text-align: left;">In this project, my responsibilities included data collection and cleaning, exploratory data analysis (EDA) and feature engineering, ensemble learning models construction, and model performance evaluation and visualization. To begin, I utilized Beautiful Soup to scrape approximately 100,000 wine and food pairing records from the Wine-Searcher website. Additionally, I sourced two datasets from Kaggle related to wine reviews and food reviews, which contained roughly 140,000 records and 500,000 records, respectively. In processing the reviews datasets, duplicates, HTML tags, mentions, URLs, punctuations, and English stop words in nltk.corpus were dropped. Additionally, the reviews were tokenized into sentences and then into words, and after that stemmed by the Snowball Stemmer. The cleaned words were then mapped to the predefined thesaurus, which are visualized in the following word clouds (the left one is for wine and the right wine is for food).</p>
+                                            <img style="max-width: 100%; height: auto;" class="img-fluid rounded mb-5" src="assets/img/wine/word clouds.png" alt="Wine"/>
+                                            <p style="text-align: left;">To extract the six taste features from the reviews, a Word2Vec model with IDF weighting was employed to calculate 300-dimensional document vectors, which were subsequently reduced to one dimension using PCA. As a result, for each wine or food review data record (corresponding to each wine or food type), there was a one-dimensional value representing the six taste features. After that, I integrated textual information about wine styles from both the wine and food pairings dataset and the wine reviews dataset. Using Jaccard similarity in combination with 2-grams, these datasets were linked together to form our training and testing sets. By analyzing the distribution relationships of the extracted features, I also introduced the DBSCAN clustering results as supplementary features to enrich the data representation. Furthermore, I utilized wine and food pairing rules formulated by wine connoisseurs to perform the final filtering of the dataset, which resulted in a dataset more likely to reveal underlying patterns.</p>
+                                            <p style="text-align: left;">During the model training and evaluation phase, my team members and I tested various models’ performances and ultimately selected a comprehensive ensemble learning model, combining Random Forest, Gradient Boosting, AdaBoost, and XGBoost, using soft voting to obtain the best results. I created both classification and regression models. The classification model predicts the food category that best matches a given wine style, while the regression model predicts the taste features of recommended foods based on the input wine style. I primarily optimized the model performance through grid search, considering metrics such as accuracy, ROC, AUC, RMSE, and others. Finally, I introduced a radar chart as a visualization method for the regression model's results, as shown in the following figure.</p>
+                                            <img style="max-width: 60%; height: auto;" class="img-fluid rounded mb-5" src="assets/img/wine/radar chart.png" alt="Wine"/>
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <!-- Portfolio Modal - Text-->
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="portfolio-modal modal fade" id="internship" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
